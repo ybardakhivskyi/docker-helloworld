@@ -5,9 +5,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Get code from a GitHub repository
-                //git 'git@github.com:ybardakhivskyi/docker-helloworld.git'
-
                 // Run Maven
                 sh "mvn clean package"
             }
